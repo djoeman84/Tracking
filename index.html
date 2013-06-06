@@ -2,17 +2,17 @@
 <html lang="en">
 
 	<head>
-		<title> Web Tracking </title>
+		<title>Web Tracking</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<meta name="description" content="Final CS181 Assignment on Web Tracking and Content Customization">
 
 		<!-- CSS -->
 		
-		<link href="assets/css/bootstrap.css" rel="stylesheet">
-	    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-	    <link href="assets/css/docs.css" rel="stylesheet">
-	    <link href="assets/jss/google-code-prettify/prettify.css" rel="stylesheet">
+		<<link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/bootstrap/docs.css" rel="stylesheet">
+    <link href="assets/js/bootstrap/google-code-prettify/prettify.css" rel="stylesheet">
 
 	    <!-- Style -->
 
@@ -22,24 +22,50 @@
 
 	<body>
 
+	<!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Web Tracking</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="advertising.html">Advertising</a>
+              </li>
+			  <li class="">
+                <a href="content.html">Content Customization</a>
+              </li>
+              <li class="">
+                <a href="freeness.html">Freeness of the Web</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
 		<!-- App -->
 		<canvas id='canvas'></canvas>
 		<script>
 			Nodes.init();
 		</script>
 
-		<!-- Enter button -->
-		<div class="container">
-			<div class="marketing">
-				<h1><a style="text-decoration:none;" href="home.html">Enter Site</a></h1>
-			</div>
-		</div>
+
 		
     <!-- Footer
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Designed with <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> by <a href="http://www.twitter.com/">Twitter</a> and hosted by <a href="http://www.github.com">GitHub</a>. Node Applet created by <a href="http://tholman.com/">Tim Tholman</a>.</p>
+        <p>Designed with <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> by <a href="http://www.twitter.com/">Twitter</a> and hosted by <a href="http://www.github.com">GitHub</a>.</p>
         <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <ul class="footer-refs">
