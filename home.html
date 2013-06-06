@@ -27,44 +27,44 @@
     -------------------------------------------------- */
 
     /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
+    /*.navbar-wrapper {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       z-index: 10;
       margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
+      margin-bottom: -90px;*/ /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    /*}
     .navbar-wrapper .navbar {
 
-    }
+    }*/
 
     /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
+    /*.navbar .navbar-inner {
       border: 0;
       -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
          -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
               box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
+    }*/
 
     /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
+    /*.navbar .brand {
+      padding: 14px 20px 16px;*/ /* Increase vertical padding to match navbar links */
+      /*font-size: 16px;
       font-weight: bold;
       text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
+    }*/
 
     /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
+    /*.navbar .nav > li > a {
       padding: 15px 20px;
-    }
+    }*/
 
     /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
+    /*.navbar .btn-navbar {
       margin-top: 10px;
-    }
+    }*/
 
 
 
@@ -175,14 +175,14 @@
 
     @media (max-width: 979px) {
 
-      .container.navbar-wrapper {
+      /*.container.navbar-wrapper {
         margin-bottom: 0;
         width: auto;
       }
       .navbar-inner {
         border-radius: 0;
         margin: -20px 0;
-      }
+      }*/
 
       .carousel .item {
         height: 500px;
@@ -208,9 +208,9 @@
 
     @media (max-width: 767px) {
 
-      .navbar-inner {
+      /*.navbar-inner {
         margin: -20px;
-      }
+      }*/
 
       .carousel {
         margin-left: -20px;
@@ -257,37 +257,39 @@
     <!--<link href="css/bootstrap/carousel.css" rel="stylesheet">-->
    </head>
    <body>
-   	<div class="navbar-wrapper">
-   		<!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-   		<div class="container">
-   			<div class="navbar navbar-inverse">
-   				<div class="navbar-inner">
-   					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		            </button>
-		            <a class="brand" href="index.html">Web Tracking</a>
-		            <div class="nav-collapse collapse">
-		            	<ul class="nav">
-		            		<li class="active">
-		            			<a href="#">Home</a>
-		            		</li>
-		            		<li>
-		            			<a href="advertising.html">Advertising</a>
-		            		</li>
-							<li>
-								<a href="content.html">Content Customization</a>
-							</li>
-							<li>
-								<a href="freeness.html">Freeness of the Web</a>
-							</li>
-		            	</ul>
-		            </div><!--/.nav-collapse -->
-   				</div><!-- /.navbar-inner -->
-   			</div><!-- /.navbar -->
-   		</div><!-- /.container -->
-   	</div><!-- /.navbar-wrapper -->
+   
+	
+   
+   	<!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Web Tracking</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="home.html">Home</a>
+              </li>
+              <li class="">
+                <a href="advertising.html">Advertising</a>
+              </li>
+			  <li class="">
+                <a href="customization.html">Content Customization</a>
+              </li>
+              <li class="">
+                <a href="freeness.html">Freeness of the Web</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 	
    	    <!-- Carousel
     ================================================== -->
