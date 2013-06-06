@@ -7,8 +7,14 @@
     <meta name="description" content="Final CS181 Assignment on Web Tracking and Content Customization">
 
     <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/bootstrap/docs.css" rel="stylesheet">
+    <link href="assets/js/bootstrap/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/timeline/compiled/css/timeline.css" rel="stylesheet">
+
+
+
 
         <style>
 
@@ -16,65 +22,13 @@
     -------------------------------------------------- */
     /* Padding below the footer and lighter body text */
 
-    body {
-      padding-bottom: 40px;
-      color: #5a5a5a;
-    }
-
-
-
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    /*.navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px;*/ /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    /*}
-    .navbar-wrapper .navbar {
-
-    }*/
-
-    /* Remove border and change up box shadow for more contrast */
-    /*.navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }*/
-
-    /* Downsize the brand/project name a bit */
-    /*.navbar .brand {
-      padding: 14px 20px 16px;*/ /* Increase vertical padding to match navbar links */
-      /*font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }*/
-
-    /* Navbar links: increase padding for taller navbar */
-    /*.navbar .nav > li > a {
-      padding: 15px 20px;
-    }*/
-
-    /* Offset the responsive button for proper vertical alignment */
-    /*.navbar .btn-navbar {
-      margin-top: 10px;
-    }*/
-
 
 
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
     /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
+
 
     .carousel .container {
       position: relative;
@@ -251,6 +205,8 @@
       }
 
     }
+    
+
     </style>
 
 
@@ -260,7 +216,7 @@
    
 	
    
-   	<!-- Navbar
+  <!-- Navbar
     ================================================== -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -276,11 +232,11 @@
               <li class="active">
                 <a href="home.html">Home</a>
               </li>
-              <li class="">
+              <li>
                 <a href="advertising.html">Advertising</a>
               </li>
-			  <li class="">
-                <a href="customization.html">Content Customization</a>
+        <li class="">
+                <a href="content.html">Content Customization</a>
               </li>
               <li class="">
                 <a href="freeness.html">Freeness of the Web</a>
@@ -348,22 +304,53 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
 
+    <div class="container">
+      <div class="marketing">
+        <h1>A Brief Introduction to Web Tracking</h1>
+         <!-- BEGIN Timeline Embed -->
+        <div id="timeline-embed">
+            <div id="timeline-embed">
+              <script type="text/javascript">
+                  var timeline_config = {
+                      width:              '100%',
+                      height:             '600',
+                      source:             'https://docs.google.com/spreadsheet/pub?key=0AnMQhxA6XEUfdEg5WVFodXliMTlDQlNsRXJ4cWh2U3c&output=html',
+                      embed_id:           'timeline-embed',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
+                      start_at_end:       false,                          //OPTIONAL START AT LATEST DATE
+                      start_at_slide:     '4',                            //OPTIONAL START AT SPECIFIC SLIDE
+                      start_zoom_adjust:  '3',                            //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
+                      hash_bookmark:      true,                           //OPTIONAL LOCATION BAR HASHES
+                      font:               'Bevan-PotanoSans',             //OPTIONAL FONT
+                      debug:              true,                           //OPTIONAL DEBUG TO CONSOLE
+                      lang:               'fr',                           //OPTIONAL LANGUAGE
+                      maptype:            'watercolor',                   //OPTIONAL MAP STYLE
+                      css:                'assets/timeline/compiled/css/timeline.css',     //OPTIONAL PATH TO CSS
+                      js:                 'assets/timeline/compiled/js/timeline-min.js'    //OPTIONAL PATH TO JS
+                  }
+              </script>
+              <script type="text/javascript" src="assets/timeline/compiled/js/storyjs-embed.js"></script>
+                  <!-- END Timeline Embed-->
+              </div>
+          </div>
+      </div>
+    </div>
+
 
 
     <!-- Javascript -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap/jquery.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-typeahead.js"></script>
     <script>
       !function ($) {
         $(function(){
@@ -374,6 +361,23 @@
     </script>
     <script src="assets/js/holder/holder.js"></script>
 
+
+
+        <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Designed with <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> by <a href="http://www.twitter.com/">Twitter</a> and hosted by <a href="http://www.github.com">GitHub</a>. Timeline created by VeriteCo's <a href="https://github.com/VeriteCo/TimelineJS">TimelineJS</a> and is under the <a href="http://mozilla.org/MPL/2.0/">Mozilla Public License, v. 2.0</a>.</p>
+        <p>Bootstrap code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-refs">
+          <li>Lily Fu</li>
+          <li>Gavilan Galloway</li>
+          <li>Alex Angarita</li>
+          <li>Joe Delgado</li>
+        </ul>
+      </div>
+    </footer>
 
    </body>
  </html>
