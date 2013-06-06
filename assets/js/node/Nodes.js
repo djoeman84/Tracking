@@ -27,7 +27,7 @@ var Nodes = {
 
   init: function() {
     // Set up the visual canvas 
-    var PERCENTAGE_HEIGHT_OF_SCREEN = 0.6;
+    var PERCENTAGE_HEIGHT_OF_SCREEN = 1.0;
     this.canvas = document.getElementById( 'canvas' );
     this.context = canvas.getContext( '2d' );
     this.context.globalCompositeOperation = "lighter";
