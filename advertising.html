@@ -25,16 +25,6 @@
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-146052-10']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
   </head>
 
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -87,244 +77,50 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#download-bootstrap"><i class="icon-chevron-right"></i> Download</a></li>
-          <li><a href="#file-structure"><i class="icon-chevron-right"></i> File structure</a></li>
-          <li><a href="#contents"><i class="icon-chevron-right"></i> What's included</a></li>
-          <li><a href="#html-template"><i class="icon-chevron-right"></i> HTML template</a></li>
-          <li><a href="#examples"><i class="icon-chevron-right"></i> Examples</a></li>
-          <li><a href="#what-next"><i class="icon-chevron-right"></i> What next?</a></li>
+          <li><a href="#ethics-of-advertising"><i class="icon-chevron-right"></i> Ethics of Advertising</a></li>
+          <li><a href="#introcuction-of"><i class="icon-chevron-right"></i> Introcuction of the Web</a></li>
+          <li><a href="#ethics"><i class="icon-chevron-right"></i> Ethical Contrast</a></li>
         </ul>
       </div>
       <div class="span9">
 
 
-
-        <!-- Download
+        <!-- Ethics of Advertising 
+        ethics-of-advertising 
         ================================================== -->
-        <section id="download-bootstrap">
+        <section id="ethics-of-advertising ">
           <div class="page-header">
-            <h1>1. Download</h1>
+            <h1> Ethics of Advertising</h1>
           </div>
-          <p class="lead">Before downloading, be sure to have a code editor (we recommend <a href="http://sublimetext.com/2">Sublime Text 2</a>) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available for download. We'll focus on getting started with the compiled Bootstrap files.</p>
-
-          <div class="row-fluid">
-            <div class="span6">
-              <h2>Download compiled</h2>
-              <p><strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
-              <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap</a></p>
-            </div>
-            <div class="span6">
-              <h2>Download source</h2>
-              <p>Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.</p>
-              <p><a class="btn btn-large" href="https://github.com/twitter/bootstrap/zipball/master" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download Bootstrap source</a></p>
-            </div>
-          </div>
+          <img class="featurette-image pull-right" style="margin:0 0 20px 20px" src="http://www.pr-squared.com/wp-content/uploads/2012/09/220px-Edward_Bernays.jpg">
+          <p class="lead">In the most generous understandings of advertising, we can see that it has many merits. Among them there is the ability that advertising bring to connecting interested partners to trade. For example, if someone is hoping to fly internationally, but is concerned about the prices, seeing an advertisement for cheap flights through a given service would potentially allow for the interested party to connect with the business, which would result in a mutually beneficial interaction. Secondly, there is the notion of equality in the market. In the same scenario, advertising can act as a normalizing agent in the market. If the scenario were that the interested party was looking for flights, but only had looked at listings from major carriers, and a smaller carrier offered a lower price, it would be hard for the interested party to discover this without some method of advertising. In this sense many would consider advertising a force in leveling the playing field of the market.</p>
+          <p class="lead">There is, of course an opposing view. Among the most famous people in the history of advertising is <a href="http://www.nytimes.com/books/98/08/16/specials/bernays-obit.html">Edward Betnays</a> who, as is widely accepted, introduced much of what is considered modern advertising. Bernays was among the first to combine psychological theory with the business of advertising. Bernays would use ideas from psychology to gain influence over those whom he was targeting in his advertisements. His most famous example what is know as the <a href="http://www.culturewars.com/CultureWars/1999/torches.html">Torches of Freedom</a> campaign, this campaign used influential women to create the idea in US culture that cigarettes were a symbol of female independence intelligence.</p>
+          <p class="lead">Advertising methods such as those used by Bernays, although commonplace in modern advertising, ethically questionable in their use of psychology to, as many would consider it, exploit the psyche of the people in order to gain profits for corporations. Many would argue that the fact that advertising is so successful is a cause for alarm. If advertising were not in some way influencing the minds of people to will them to purchase things they would not have otherwise.</p>
         </section>
 
-
-
-        <!-- File structure
+        <!-- Introcuction of the Web 
+        introcuction-of
         ================================================== -->
-        <section id="file-structure">
+        <section id="introcuction-of">
           <div class="page-header">
-            <h1>2. File structure</h1>
+            <h1> Introcuction of the Web</h1>
           </div>
-          <p class="lead">Within the download you'll find the following file structure and contents, logically grouping common assets and providing both compiled and minified variations.</p>
-          <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:</p>
-<pre class="prettyprint">
-  bootstrap/
-  ├── css/
-  │   ├── bootstrap.css
-  │   ├── bootstrap.min.css
-  ├── js/
-  │   ├── bootstrap.js
-  │   ├── bootstrap.min.js
-  └── img/
-      ├── glyphicons-halflings.png
-      └── glyphicons-halflings-white.png
-</pre>
-          <p>This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). The image files are compressed using <a href="http://imageoptim.com/">ImageOptim</a>, a Mac app for compressing PNGs.</p>
-          <p>Please note that all JavaScript plugins require jQuery to be included.</p>
+            <p class="lead"> It is important to ground any discussion of the ethics of web-tracking and targeted advertising in a consideration of the ethical implications of non-internet based advertising. Although online advertising may seem to many as a new and unique entity, and a revolution in the context of advertising, advertisers have always been interested in the notion of targeted advertising, and many of the core issues and concepts which drove advertising before the internet are still very relevant in today's applications of advertising. Advertisers in the past would have to be more creative and resourceful to attain the target audience they wished to achieve. For example, a corporation hoping to market their product to young men may have sought to place video advertisements on TV channels with a young audience. They may have attempted to gain that same market by holding events at a university, or sponsoring celebrities and athletes. Although the desire to target advertising has been intact since before the beginning of the internet, the web allowed for two major changes in the targeted advertising process. Firstly, advertising employees tasked with finding target audiences and assessing how to find them in the real world were replaced by machine learning algorithms which optimize relationships between advertisers and their target audience. Furthermore, the creativity in terms of the effort and diversity of advertising styles required to reach specific demographics was replaced by the instantaneous and nearly free resource that is the internet. Thus, it became incredibly more reasonable to launch a targeted advertising campaign as the relative cost between targeted advertising and traditional advertising approached zero.</p>
         </section>
 
-
-
-        <!-- Contents
+        <!-- Ethical Contrast 
+        ethics
         ================================================== -->
-        <section id="contents">
+        <section id="ethics">
           <div class="page-header">
-            <h1>3. What's included</h1>
+            <h1> Ethical Contrast</h1>
           </div>
-          <p class="lead">Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the <a href="http://getbootstrap.com">Bootstrap documentation</a>.</p>
-
-          <h2>Docs sections</h2>
-          <h4><a href="http://twitter.github.com/bootstrap/scaffolding.html">Scaffolding</a></h4>
-          <p>Global styles for the body to reset type and background, link styles, grid system, and two simple layouts.</p>
-          <h4><a href="http://twitter.github.com/bootstrap/base-css.html">Base CSS</a></h4>
-          <p>Styles for common HTML elements like typography, code, tables, forms, and buttons. Also includes <a href="http://glyphicons.com">Glyphicons</a>, a great little icon set.</p>
-          <h4><a href="http://twitter.github.com/bootstrap/components.html">Components</a></h4>
-          <p>Basic styles for common interface components like tabs and pills, navbar, alerts, page headers, and more.</p>
-          <h4><a href="http://twitter.github.com/bootstrap/javascript.html">JavaScript plugins</a></h4>
-          <p>Similar to Components, these JavaScript plugins are interactive components for things like tooltips, popovers, modals, and more.</p>
-
-          <h2>List of components</h2>
-          <p>Together, the <strong>Components</strong> and <strong>JavaScript plugins</strong> sections provide the following interface elements:</p>
-          <ul>
-            <li>Button groups</li>
-            <li>Button dropdowns</li>
-            <li>Navigational tabs, pills, and lists</li>
-            <li>Navbar</li>
-            <li>Labels</li>
-            <li>Badges</li>
-            <li>Page headers and hero unit</li>
-            <li>Thumbnails</li>
-            <li>Alerts</li>
-            <li>Progress bars</li>
-            <li>Modals</li>
-            <li>Dropdowns</li>
-            <li>Tooltips</li>
-            <li>Popovers</li>
-            <li>Accordion</li>
-            <li>Carousel</li>
-            <li>Typeahead</li>
-          </ul>
-          <p>In future guides, we may walk through these components individually in more detail. Until then, look for each of these in the documentation for information on how to utilize and customize them.</p>
+          <p class="lead">With the tools gained by advertising in the growth of the internet, it is clear to see that advertisers' ability to successful target consumers has increased. It is estimated that targeted advertising is <a href="http://www.networkadvertising.org/pdfs/Beales_NAI_Study.pdf">2.7 times as profitable</a> for corporation than traditional advertising. In this sense advertisers have the ability to leverage a much greater amount of information to model their advertising scheme so as to maximally exploit psychological tendencies to maximize profits.</p>
+          <p class="lead">Although these developments in technology may seem alarming, as the capacity of the advertiser has greatly expanded, the moral and ethical implications of advertising have remained much the same. Issues pertaining to the exploitation of psychological tendencies to coerce consumers into purchasing goods are in this case just as relevant as they were before.</p>
+          <p class="lead">From a <span title="let's be honest, this whole deontology vs utilitarianism thing is pretty lame: the is no such thing as utilitarianism without a prior set of metrics and weights, and there is no way to decide based on those thoughts without some system of weighing. They are not to be contrasted as they are really two aspects of any moral system. There is no person who does not utilize utilitarianism and deontology. Ay yay yay... ok, I'll finish writing">deontological perspective</span>, the change represents little change, since no moral boundary was crossed which wasn't there before. However, a <span title="back for more?? clever you... ok, here's something... https://www.youtube.com/watch?v=dQw4w9WgXcQ">utilitarian</span> perspective may be more conflicted. On one hand, the increased capacity of the advertising firms enables a higher level of exploitation, whereas on the other hand, the higher level of customization allows for a greater chance that advertising will pursue the role of connecting people with products. Furthermore, internet based advertising paired with targeted and machine learning approaches enables small firms to spend less on advertising and increases their ability to connect with customers they may not have been able to reach before. For example, a magazine for Arabic speaking gardening enthusiasts may have had an extremely difficult time reaching a large number of interested consumers, especially overseas, but with targeted advertising, internet tracking would allow advertising firms to connect those interested in these topics with this magazine, thus connecting interested parties as well as leveling the playing field.</p>
         </section>
-
-
-
-        <!-- HTML template
-        ================================================== -->
-        <section id="html-template">
-          <div class="page-header">
-            <h1>4. Basic HTML template</h1>
-          </div>
-          <p class="lead">With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the <a href="./getting-started.html#file-structure">File structure</a>.</p>
-          <p>Now, here's a look at a <strong>typical HTML file</strong>:</p>
-<pre class="prettyprint linenums">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-    &lt;script src="http://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</pre>
-          <p>To make this <strong>a Bootstrapped template</strong>, just include the appropriate CSS and JS files:</p>
-<pre class="prettyprint linenums">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;!-- Bootstrap --&gt;
-    &lt;link href="css/bootstrap.min.css" rel="stylesheet" media="screen"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-    &lt;script src="http://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
-    &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</pre>
-          <p><strong>And you're set!</strong> With those two files added, you can begin to develop any site or application with Bootstrap.</p>
-        </section>
-
-
-
-        <!-- Examples
-        ================================================== -->
-        <section id="examples">
-          <div class="page-header">
-            <h1>5. Examples</h1>
-          </div>
-          <p class="lead">Move beyond the base template with a few example layouts. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
-          <ul class="thumbnails bootstrap-examples">
-            <li class="span3">
-              <a class="thumbnail" href="examples/starter-template.html">
-                <img src="assets/img/examples/bootstrap-example-starter.png" alt="">
-              </a>
-              <h4>Starter template</h4>
-              <p>A barebones HTML document with all the Bootstrap CSS and JavaScript included.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/hero.html">
-                <img src="assets/img/examples/bootstrap-example-marketing.png" alt="">
-              </a>
-              <h4>Basic marketing site</h4>
-              <p>Featuring a hero unit for a primary message and three supporting elements.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/fluid.html">
-                <img src="assets/img/examples/bootstrap-example-fluid.png" alt="">
-              </a>
-              <h4>Fluid layout</h4>
-              <p>Uses our new responsive, fluid grid system to create a seamless liquid layout.</p>
-            </li>
-
-            <li class="span3">
-              <a class="thumbnail" href="examples/marketing-narrow.html">
-                <img src="assets/img/examples/bootstrap-example-marketing-narrow.png" alt="">
-              </a>
-              <h4>Narrow marketing</h4>
-              <p>Slim, lightweight marketing template for small projects or teams.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/justified-nav.html">
-                <img src="assets/img/examples/bootstrap-example-justified-nav.png" alt="">
-              </a>
-              <h4>Justified nav</h4>
-              <p>Marketing page with equal-width navigation links in a modified navbar.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/signin.html">
-                <img src="assets/img/examples/bootstrap-example-signin.png" alt="">
-              </a>
-              <h4>Sign in</h4>
-              <p>Barebones sign in form with custom, larger form controls and a flexible layout.</p>
-            </li>
-
-            <li class="span3">
-              <a class="thumbnail" href="examples/sticky-footer.html">
-                <img src="assets/img/examples/bootstrap-example-sticky-footer.png" alt="">
-              </a>
-              <h4>Sticky footer</h4>
-              <p>Pin a fixed-height footer to the bottom of the user's viewport.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/carousel.html">
-                <img src="assets/img/examples/bootstrap-example-carousel.png" alt="">
-              </a>
-              <h4>Carousel jumbotron</h4>
-              <p>A more interactive riff on the basic marketing site featuring a prominent carousel.</p>
-            </li>
-          </ul>
-        </section>
-
-
-
-
-        <!-- Next
-        ================================================== -->
-        <section id="what-next">
-          <div class="page-header">
-            <h1>What next?</h1>
-          </div>
-          <p class="lead">Head to the docs for information, examples, and code snippets, or take the next leap and customize Bootstrap for any upcoming project.</p>
-          <a class="btn btn-large btn-primary" href="./scaffolding.html" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Visit docs']);">Visit the Bootstrap docs</a>
-          <a class="btn btn-large" href="./customize.html" style="margin-left: 5px;" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Customize']);">Customize Bootstrap</a>
-        </section>
-
-
-
-
       </div>
     </div>
-
   </div>
 
 
